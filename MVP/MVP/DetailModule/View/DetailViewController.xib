@@ -18,19 +18,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3w-eu-wQI">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3w-eu-wQI">
+                    <rect key="frame" x="20" y="44" width="374" height="598"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQN-Kc-cNV">
+                    <rect key="frame" x="160" y="737" width="94" height="61"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="dYt-eC-DBm"/>
+                    </constraints>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tapAction:" destination="-1" eventType="touchUpInside" id="9j8-q4-JLJ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="y3w-eu-wQI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IWf-GS-Bvv"/>
-                <constraint firstAttribute="trailing" secondItem="y3w-eu-wQI" secondAttribute="trailing" id="Pqv-5p-9MP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="y3w-eu-wQI" secondAttribute="bottom" id="fpe-Cu-KHD"/>
-                <constraint firstItem="y3w-eu-wQI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iXl-oy-rOg"/>
+                <constraint firstItem="y3w-eu-wQI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="00M-k8-MdC"/>
+                <constraint firstItem="FQN-Kc-cNV" firstAttribute="top" secondItem="y3w-eu-wQI" secondAttribute="bottom" constant="95" id="0bi-rF-2zR"/>
+                <constraint firstItem="FQN-Kc-cNV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="160" id="7Y2-Uu-EkI"/>
+                <constraint firstItem="y3w-eu-wQI" firstAttribute="centerX" secondItem="FQN-Kc-cNV" secondAttribute="centerX" id="Nti-nf-hWe"/>
+                <constraint firstItem="y3w-eu-wQI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Qzz-yg-MhB"/>
+                <constraint firstItem="y3w-eu-wQI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="m3e-3m-KXE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FQN-Kc-cNV" secondAttribute="bottom" constant="64" id="yyf-z3-uom"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
